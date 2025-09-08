@@ -1,0 +1,15 @@
+Rebate Rules:
+- Category A: 5% standard rebate to customer
+- Category B: 10% standard rebate to customer
+- Category C: 0% standard rebate; any nonzero rebate is an anomaly
+
+Incentive Rules:
+- Incentive_Rate = 2% of Net Sale Amount
+- Net Sale = Total_Sale_Amount - (Total_Sale_Amount * Rebate_Rate)
+
+Validation Rules:
+- Unique Transaction_ID
+- Mandatory Customer_ID and Product_ID
+- ERP Unit_Price must equal Price_List on Date_of_Sale (CRM may violate)
+- Mixed date formats expected in CRM; standardize to ISO during cleaning
+- Discount cap guidance: flag any CRM Unit_Price < 75% of list as breach
