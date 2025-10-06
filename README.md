@@ -116,6 +116,24 @@ The dashboard tracks the following metrics:
 - **Match Rate**: Percentage of successful reconciliations[memory:1]
 
 ---
+## Dashboard
+
+The Power BI dashboard provides interactive visualizations for monitoring reconciliation metrics, agent performance, and exception trends.
+
+### KPI Dashboard Overview
+
+![KPI Dashboard](dashboard/images/KPI-Dashboard.jpeg)
+
+**Key Features:**
+- **Summary Metrics Panel**: Displays total transactions, sales amounts, net sales, and exception counts
+- **Top 10 Agents by Exception Rate**: Bar chart ranking agents with highest exception rates (Agent 11: 18.9%, Agent 4: 18.0%, Agent 23: 16.5%)
+- **Sales Agent Performance Table**: Lists top agents with their respective exception rates
+- **Monthly Exception Trends**: Donut chart showing distribution of exceptional transactions across months (2025-08 to 2025-12)
+- **Exception Analysis by Month**: Tabular breakdown of exceptional transactions per month
+
+The dashboard enables stakeholders to quickly identify high-risk agents, monitor compliance trends, and prioritize exception resolution.
+
+---
 
 ## Deliverables
 
