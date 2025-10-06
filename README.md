@@ -158,8 +158,6 @@ git clone https://github.com/vasiq8/crm-erp-sales-reconciliation.git
 ## Author & Contact
 
 **Vasiq**  
-📧 Email: vasiq.8@gmail.com  
-📱 Phone: 8385898989  
-💼 LinkedIn: [linkedin.com/in/vasiq8](https://linkedin.com/in/vasiq8)  
-🔗 GitHub: [github.com/vasiq8](https://github.com/vasiq8)
+ Email: vasiq.8@gmail.com  
+ Phone: 8385898989  
 
