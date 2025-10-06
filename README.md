@@ -10,7 +10,6 @@ _Validating sales transactions across CRM and ERP systems, detecting anomalies, 
 - [Objectives](#objectives)
 - [Dataset](#dataset)
 - [Tools & Technologies](#tools--technologies)
-- [Project Structure](#project-structure)
 - [Methodology](#methodology)
 - [Validation Rules](#validation-rules)
 - [Key Metrics & KPIs](#key-metrics--kpis)
