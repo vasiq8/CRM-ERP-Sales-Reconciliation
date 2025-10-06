@@ -81,3 +81,90 @@ The project uses the following datasets:
 
 ## Project Structure
 
+crm-erp-sales-reconciliation/ │ ├── README.md ├── .gitignore │ ├── data/                           # Raw and reference data files │   ├── erp_transactions.csv │   ├── crm_transactions.csv │   ├── products.csv │   ├── customers.csv │   ├── price_list.csv │   ├── rebate_policy.csv │   ├── incentive_policy.csv │   ├── sales_agents.csv │   ├── calendar_month.csv │   └── policies_and_rules.txt │ ├── analysis/                       # Excel workbooks and analysis │   └── Worksheet.xlsx │ ├── dashboard/                      # Power BI dashboard │   └── SalesDifference.pbix │ └── documentation/                  # Project documentation └── README.docx
+
+
+---
+
+## Methodology
+
+1. **Data Integration** – Combined CRM, ERP, and master datasets in Excel/Power BI
+2. **Data Cleaning** – Standardized CRM data, removed duplicates, validated mandatory IDs
+3. **Validation Rules Applied** – Implemented business rules for pricing, rebates, and incentives
+4. **Exception Reporting** – Identified missing ERP matches, rebate errors, blank IDs, and discount breaches
+5. **Analytics & Dashboards** – Built KPI dashboard, exception reports, and trend analysis using Power BI[file:2]
+
+---
+
+## Validation Rules
+
+- Transaction IDs must be unique
+- Customer_ID and Product_ID are mandatory fields
+- ERP unit prices must match Price List exactly
+- CRM transactions flagged if Unit Price < 75% of Price List (discount breach)
+- Rebates applied by product category: A (5%), B (10%), C (0%)
+- Sales incentives calculated at 2% of net sales[file:2]
+
+---
+
+## Key Metrics & KPIs
+
+The dashboard tracks the following metrics:
+- **Total Transactions**: Count of all transactions processed
+- **Total Sales**: Aggregate sales value from ERP and CRM
+- **Net Sales**: Sales after rebates and discounts
+- **Price Breaches**: Transactions violating pricing rules
+- **Rebate Errors**: Incorrect rebate calculations
+- **Exceptions**: Transactions requiring manual review
+- **ERP Missing**: CRM transactions without ERP match
+- **ERP Matches**: Successfully reconciled transactions
+- **Match Rate**: Percentage of successful reconciliations[memory:1]
+
+---
+
+## Deliverables
+
+- **Cleaned CRM Dataset** with anomaly flags
+- **Rebate & Incentive Calculations** at transaction and agent levels
+- **Exception Reports** for anomalies, mismatches, and compliance breaches
+- **Excel Workbook** (Worksheet.xlsx) with pivots, KPIs, and trend analysis
+- **Power BI Dashboard** (SalesDifference.pbix) for interactive visualization[file:2]
+
+---
+
+## How to Use This Project
+
+1. **Clone the repository:**
+git clone https://github.com/vasiq8/crm-erp-sales-reconciliation.git
+
+2. **Navigate to the data folder** and review the raw data files
+
+3. **Open the Excel workbook:**
+   - `analysis/Worksheet.xlsx` contains all calculations, pivots, and KPIs
+
+4. **Open the Power BI dashboard:**
+   - `dashboard/SalesDifference.pbix` for interactive visualizations
+
+5. **Review documentation:**
+   - `documentation/README.docx` for detailed project context
+
+---
+
+## Key Findings
+
+- Identified **3.4% variance** between ERP (3.04M) and CRM (2.94M) sales totals
+- Detected **pricing violations** where CRM prices fell below 75% of standard price list
+- Flagged **rebate errors** due to incorrect category assignments
+- Highlighted **high-risk agents** with frequent exceptions and compliance breaches
+- Provided **actionable insights** through clear KPIs and visual dashboards for stakeholder decision-making[file:2][memory:1]
+
+---
+
+## Author & Contact
+
+**Vasiq**  
+📧 Email: vasiq.8@gmail.com  
+📱 Phone: 8385898989  
+💼 LinkedIn: [linkedin.com/in/vasiq8](https://linkedin.com/in/vasiq8)  
+🔗 GitHub: [github.com/vasiq8](https://github.com/vasiq8)
+
