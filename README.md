@@ -77,11 +77,6 @@ The project uses the following datasets:
 
 [file:2]
 
----
-
-## Project Structure
-
-crm-erp-sales-reconciliation/ │ ├── README.md ├── .gitignore │ ├── data/                           # Raw and reference data files │   ├── erp_transactions.csv │   ├── crm_transactions.csv │   ├── products.csv │   ├── customers.csv │   ├── price_list.csv │   ├── rebate_policy.csv │   ├── incentive_policy.csv │   ├── sales_agents.csv │   ├── calendar_month.csv │   └── policies_and_rules.txt │ ├── analysis/                       # Excel workbooks and analysis │   └── Worksheet.xlsx │ ├── dashboard/                      # Power BI dashboard │   └── SalesDifference.pbix │ └── documentation/                  # Project documentation └── README.docx
 
 
 ---
